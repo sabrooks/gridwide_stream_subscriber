@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xop="http://www.w3.org/2004/08/xop/include"
+  xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+  xmlns:policnet="http://tempuri.org/policnet.xsd"
+  xmlns:policynet="urn:policynet/v5">
+  <SOAP-ENV:Body>
+    <policynet:publishCustomEventTopic>
+      <policynet:customEventTopics>
+        <policynet:event eventDesc="Power Restoration notification received" eventCode="4043" eventType="EnergyService" eventCategory="GridNet" eventSeverity="Warning" eventTimeUTC="2020-09-30T22:35:00+00:00" eventTime="2020-09-30T15:35:00">
+          <policynet:eventSource>
+            <policynet:deviceSource servicePointId="0852731" utilitySerialNumber="1ND090757772" macAddress="356857090290894"></policynet:deviceSource>
+          </policynet:eventSource>
+        </policynet:event>
+        <policynet:event eventArguments="Meter events to all(91470)" eventDesc="Demand Reset occurred" eventCode="20" eventType="EnergyService" eventCategory="C1219Std" eventSeverity="Info" eventTimeUTC="2020-09-30T22:30:42+00:00" eventTime="2020-09-30T15:30:42">
+          <policynet:eventSource>
+            <policynet:deviceSource servicePointId="1001932" utilitySerialNumber="3KD090763288" macAddress="356857090365019"></policynet:deviceSource>
+          </policynet:eventSource>
+        </policynet:event>
+        <policynet:event eventArguments="Meter events to all(91470)" eventDesc="Self Read occurred" eventCode="21" eventType="EnergyService" eventCategory="C1219Std" eventSeverity="Info" eventTimeUTC="2020-09-30T22:30:42+00:00" eventTime="2020-09-30T15:30:42">
+          <policynet:eventSource>
+            <policynet:deviceSource servicePointId="1001932" utilitySerialNumber="3KD090763288" macAddress="356857090365019"></policynet:deviceSource>
+          </policynet:eventSource>
+        </policynet:event>
+      </policynet:customEventTopics>
+    </policynet:publishCustomEventTopic>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
